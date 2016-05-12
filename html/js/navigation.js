@@ -1,0 +1,2 @@
+!function(){var e,a,n=document.getElementById("site-navigation");if(n&&(e=n.getElementsByTagName("h3")[0],a=n.getElementsByTagName("ul")[0],e))return a&&a.childNodes.length?void(e.onclick=function(){-1==a.className.indexOf("nav-menu")&&(a.className="nav-menu"),-1!=e.className.indexOf("toggled-on")?(e.className=e.className.replace(" toggled-on",""),a.className=a.className.replace(" toggled-on","")):(e.className+=" toggled-on",a.className+=" toggled-on")}):void(e.style.display="none")}();
+//# sourceMappingURL=maps/navigation.js.map
