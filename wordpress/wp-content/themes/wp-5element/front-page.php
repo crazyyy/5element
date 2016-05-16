@@ -1,18 +1,410 @@
-<?php /* Template Name: Demo Page Template */ get_header(); ?>
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<!DOCTYPE html>
+<html>
 
-      <h1 class="page-title inner-title"><?php the_title(); ?></h1>
-      <?php the_content(); ?>
-      <?php edit_post_link(); ?>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Натяжные потолки</title>
 
-    </article>
-  <?php endwhile; else: // If 404 page error ?>
-    <article>
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+  <![endif]-->
+  <meta name="viewport" content="width=1080">
 
-      <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+  <!--[if lt IE 9]>
+    <link rel='stylesheet' id='twentytwelve-ie-css'  href='http://5element-potolki.ru/content/themes/p/css/ie.css?ver=20121010' type='text/css' media='all' />
+  <![endif]-->
 
-    </article>
-  <?php endif; ?>
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+
+
+</head>
+
+
+<body>
+
+  <!-- Main block -->
+  <div style="width: 1000px; margin: 0 auto; background-color: #fff;">
+    <div class="page">
+      <!-- Header block -->
+      <header>
+        <div class="header">
+          <div class="logo_top">
+            <a href="http://5element-potolki.ru/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="производство и установка натяжных потолков в Санкт-Петербурге и области"></a>
+          </div>
+
+          <div class="tel_block"><span style="color:#de2c2c;; font-size:15px;">МНОГОКАНАЛЬНЫЙ</span>
+            <br><span class="tel"><span> 643-43-33</span>
+            <div class="menu-menu_client-container">
+              <ul id="menu-menu_client" class="menu_client">
+                <li id="menu-item-296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-296"><a href="http://5element-potolki.ru/zakazat-zvonok/">Заказать звонок</a></li>
+                <li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292"><a href="http://5element-potolki.ru/vyzvat-zamershhika/">Вызвать замерщика</a></li>
+              </ul>
+            </div>
+            </span>
+          </div>
+          <div class="vybor">
+            <div class="vybor_left"><span><a href="http://5element-potolki.ru/">НАТЯЖНЫЕ ПОТОЛКИ</a></span></div>
+            <div class="vybor_right"><a href="http://5element-okna.ru/">ПЛАСТИКОВЫЕ ОКНА</a></div>
+          </div>
+          <div class="menu_top">
+            <ul class="menu">
+              <div class="menu-menu_top-container">
+                <ul id="menu-menu_top" class="menu">
+                  <li id="menu-item-349" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-349"><a href="http://5element-potolki.ru/category/catalog/">Каталог фактур</a></li>
+                  <li id="menu-item-320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-320"><a href="http://5element-potolki.ru/calc/">Калькулятор</a></li>
+                  <li id="menu-item-321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="http://5element-potolki.ru/photos/">Фотогалерея</a></li>
+                  <li id="menu-item-498" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-498"><a href="http://5element-potolki.ru/category/svetilniki/">Светильники</a></li>
+                  <li id="menu-item-821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-821"><a href="http://5element-potolki.ru/otzyvy/">Отзывы</a></li>
+                  <li id="menu-item-761" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-761"><a href="http://5element-potolki.ru/category/stati/">Статьи</a></li>
+                  <li id="menu-item-760" class="cont_top menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="http://5element-potolki.ru/kontaktyi/">Контакты</a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- END Header block -->
+      <div class="main">
+        <section class="center_content">
+          <div style="margin-top:-10px; margin-left:-10px">
+            <!-- End vSlider options -->
+            <div id="maincontainer">
+              <div class="coin-slider" id="coin-slider-main">
+                <div id="main">
+                  <a href="http://5element-potolki.ru/calc/" style="background:#fff;" target="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb.jpg" style="width: 718px; height: 280px; display: none;" alt="">
+                  </a>
+                  <a href="http://5element-potolki.ru/" style="background:#fff;" target="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb(1).jpg" style="width: 718px; height: 280px; display: none;" alt="">
+                  </a>
+                  <a href="http://5element-potolki.ru/" style="background:#fff;" target="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb(2).jpg" style="width: 718px; height: 280px; display: none;" alt="">
+                  </a>
+                  <a href="http://5element-potolki.ru/" style="background:#fff;" target="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb(3).jpg" style="width: 718px; height: 280px; display: none;" alt="">
+                  </a>
+                  <a href="http://5element-potolki.ru/" style="background:#fff;" target="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb(4).jpg" style="width: 718px; height: 280px; display: none;" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="clear:both"></div>
+          <h1 class="entry-title">Натяжные потолки</h1>
+          <div id="cont">
+            <p>Потолок ничем не скроешь: он всегда на виду, он всегда бросается в глаза. Так что и уделить ему внимание при ремонте следует немалое. Натяжные потолки решают вопрос обустройства столь заметной части интерьера практически идеально: эстетично, надежно, экологично, быстро, практически без строительного мусора и пыли, без необходимости исправлять дефекты настоящего потолка, да еще и позволит спрятать за натяжным потолком некоторые коммуникации.</p>
+            <div class="ngg-galleryoverview" id="ngg-gallery-1-95">
+              <!-- Thumbnails -->
+              <div id="ngg-image-1" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/gliantcevye/glyanec.jpg" title=" " rel="prettyPhoto[set_1]">
+                    <img title="glyanec" alt="glyanec" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_glyanec.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-7" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/gliantcevye/gl0001.jpg" title=" " rel="prettyPhoto[set_1]">
+                    <img title="gl0001" alt="gl0001" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_gl0001.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-8" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/gliantcevye/gl0002.jpg" title=" " rel="prettyPhoto[set_1]">
+                    <img title="gl0002" alt="gl0002" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_gl0002.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-9" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/gliantcevye/gl0003.jpg" title=" " rel="prettyPhoto[set_1]">
+                    <img title="gl0003" alt="gl0003" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_gl0003.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-10" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/gliantcevye/gl0004.jpg" title=" " rel="prettyPhoto[set_1]">
+                    <img title="gl0004" alt="gl0004" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_gl0004.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-11" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/gliantcevye/gl0005.jpg" title=" " rel="prettyPhoto[set_1]">
+                    <img title="gl0005" alt="gl0005" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_gl0005.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-12" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/gliantcevye/gl0006.jpg" title=" " rel="prettyPhoto[set_1]">
+                    <img title="gl0006" alt="gl0006" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_gl0006.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-13" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/gliantcevye/gl0007.jpg" title=" " rel="prettyPhoto[set_1]">
+                    <img title="gl0007" alt="gl0007" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_gl0007.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-14" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/gliantcevye/gl0008.jpg" title=" " rel="prettyPhoto[set_1]">
+                    <img title="gl0008" alt="gl0008" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_gl0008.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <!-- Pagination -->
+            </div>
+            <h2>Натяжные потолки – это эффектность и эффективность.</h2>
+            <p><img class="alignleft size-medium wp-image-137" alt="натяжные потолки в гостиной" src="<?php echo get_template_directory_uri(); ?>/img/gostinnaya-300x203.jpg" width="300" height="203">Предоставляется просто огромный выбор как однотонных цветовых решений, так и рисунков, включая индивидуальную эксклюзивную фотопечать. Кроме того могут быть выбраны глянцевые и матовые поверхности, а также различные фактуры. И все это позволяет обустраивать многоуровневые конструкции с использованием различных пленок и светильников разных типов. Это дает возможность воплотить в жизнь самые невероятные дизайнерские идеи. Да еще и от затопления соседями сверху может уберечь.</p>
+            <h2 style="clear: both;">Каждый хозяин хочет обеспечить высокое качество по минимальной цене.</h2>
+            <p>Это легко сделать, если приобретать все комплектующие и сами полотна для такого потолка без посредников в компании «<strong>Пятый Элемент</strong>«. Тем более что мы занимаемся и раскроем, и поставкой, и консультацией по выбору всего необходимого. У нас цены предельно низкие. Даже безо всяких скидок они будут куда ниже, чем у компаний, которые занимаются установкой подобных потолков. Это легко объяснимо тем, что данные компании приобретают все необходимое для своей работы у нас.</p>
+            <div class="ngg-galleryoverview" id="ngg-gallery-2-95">
+              <!-- Thumbnails -->
+              <div id="ngg-image-2" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/matovye.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="matovye" alt="matovye" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_matovye.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-35" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/mat0001.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="mat0001" alt="mat0001" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_mat0001.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-36" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/mat0002.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="mat0002" alt="mat0002" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_mat0002.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-37" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/mat0003.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="mat0003" alt="mat0003" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_mat0003.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-38" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/mat0004.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="mat0004" alt="mat0004" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_mat0004.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-39" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/mat0005.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="mat0005" alt="mat0005" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_mat0005.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-40" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/mat0006.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="mat0006" alt="mat0006" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_mat0006.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-41" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/mat0007.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="mat0007" alt="mat0007" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_mat0007.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-42" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/mat0008.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="mat0008" alt="mat0008" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_mat0008.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <div id="ngg-image-43" class="ngg-gallery-thumbnail-box">
+                <div class="ngg-gallery-thumbnail">
+                  <a href="http://5element-potolki.ru/content/wp-content/gallery/matovye/mat0009.jpg" title=" " rel="prettyPhoto[set_2]">
+                    <img title="mat0009" alt="mat0009" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_mat0009.jpg" width="100" height="75">
+                  </a>
+                </div>
+              </div>
+              <!-- Pagination -->
+            </div>
+            <h2>«5 Элемент» заботится о том, чтобы в наличии всегда были самые разнообразные декоры пленок, а также комплектующие для их натяжения.</h2>
+            <p><img class="alignleft size-medium wp-image-106" alt="в спальне" src="<?php echo get_template_directory_uri(); ?>/img/v-spal-ne-300x225.jpg" width="300" height="225" srcset="http://5element-potolki.ru/content/uploads/2013/09/v-spal-ne-300x225.jpg 300w, http://5element-potolki.ru/content/uploads/2013/09/v-spal-ne.jpg 800w" sizes="(max-width: 300px) 100vw, 300px">Ассортимент продукции постоянно расширяется, добавляются новые разработки дизайнеров, обновляются коллекции. Даже самые требовательные покупатели всегда могут подобрать именно то, что идеально впишется в интерьер их жилья, кабинета, офиса и не только.</p>
+            <p>Мы используем продукцию только надежных и проверенных производителей с мировым именем, которая не вызовет нареканий. Высокое качество – главный критерий, по которому отбираются товары для нашего магазина. Безукоризненное ровное полотно без швов позволит обустроить надежный цельный потолок без изъянов, который прослужит не одно десятилетие.</p>
+            <p>«Пятый Элемент» гарантирует получение безупречного внешнего вида, прекрасных эксплуатационных характеристик и долговечности подобной отделки.</p>
+            <h2>Вся поставляемая продукция имеет сертификацию, полностью безопасна для здоровья и отвечает техническим требованиям.</h2>
+            <p>Такие потолки можно применять даже в детских комнатах и жилище людей, страдающих аллергией. Тем более что натяжной потолок очень прост в уходе и гигиеничен.</p>
+            <div class="sertificate_block"></div>
+          </div>
+          <br>
+          <h2>Поделиться</h2>
+        </section>
+        <aside class="sidebar_l">
+          <div class="menu_left_block">
+            <div class="menu_left">
+              <div class="menu-menu_main-container">
+                <ul id="menu-menu_main" class="menu">
+                  <li id="menu-item-77" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-77"><a href="http://5element-potolki.ru/">Главная</a></li>
+                  <li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87"><a href="http://5element-potolki.ru/category/faq/">Вопрос-ответ</a></li>
+                  <li id="menu-item-324" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-324"><a href="http://5element-potolki.ru/bezopasnost-pri-montazhe/">Безопасность</a></li>
+                  <li id="menu-item-341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a href="http://5element-potolki.ru/sertifikaty/">Сертификаты</a></li>
+                  <li id="menu-item-407" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-407"><a href="http://5element-potolki.ru/category/dilers/">Дилерам</a></li>
+                  <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="http://5element-potolki.ru/kontaktyi/">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a class="dizajn-potolkov my_btn blink" href="http://5element-potolki.ru/onlajn-translyatsiya/" style="display: inline-block; opacity: 0.081236;">Онлайн Трансляция производства</a>
+          <a class="potolki-svoimi-rukami my_btn" href="http://5element-potolki.ru/potolki-svoimi-rukami/">Натяжной потолок своими руками <br><img src="<?php echo get_template_directory_uri(); ?>/img/bezgaza.png" width="185" height="60"></a>
+          <a class="dizajn-potolkov my_btn" href="http://5element-potolki.ru/dizajn-potolkov/">On-line визуализации в интерьере</a>
+          <a href="http://5element-potolki.ru/rassrochka0/"><img src="<?php echo get_template_directory_uri(); ?>/img/rassrochka_51.png"></a>
+          <p>&nbsp;</p>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/cards1.png">
+          <p>&nbsp;</p>
+          <div class="menu_left2">
+            <h2>Каталог потолков:</h2>
+            <div class="menu-menu_dop-container">
+              <ul id="menu-menu_dop" class="menu">
+                <li id="menu-item-88" class="first menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-88"><a href="http://5element-potolki.ru/category/po-prineneniu/">По применению</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-91"><a href="http://5element-potolki.ru/v-gostinoj/">в гостиной</a></li>
+                    <li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-93"><a href="http://5element-potolki.ru/v-spalne/">в спальне</a></li>
+                    <li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-92"><a href="http://5element-potolki.ru/v-detskoj/">в детской</a></li>
+                    <li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-94"><a href="http://5element-potolki.ru/na-kuhne/">на кухне</a></li>
+                    <li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-90"><a href="http://5element-potolki.ru/v-vannoj/">в ванной</a></li>
+                    <li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-89"><a href="http://5element-potolki.ru/v-bassejne/">в бассейне</a></li>
+                  </ul>
+                </li>
+                <li id="menu-item-115" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-115"><a href="http://5element-potolki.ru/category/po-fakture/">По фактуре</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-116"><a href="http://5element-potolki.ru/glyantsevye/">глянцевые</a></li>
+                    <li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-117"><a href="http://5element-potolki.ru/matovye/">матовые</a></li>
+                    <li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-118"><a href="http://5element-potolki.ru/satinovye/">сатиновые</a></li>
+                    <li id="menu-item-560" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-560"><a href="http://5element-potolki.ru/tkanevy-clipso/">тканевые Clipso</a></li>
+                    <li id="menu-item-561" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-561"><a href="http://5element-potolki.ru/tkanevye-descor/">тканевые Descor</a></li>
+                  </ul>
+                </li>
+                <li id="menu-item-559" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-559"><a href="http://5element-potolki.ru/category/po-tipu/">По типу</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-562" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-562"><a href="http://5element-potolki.ru/hudozhestvennye/">с фотопечатью</a></li>
+                    <li id="menu-item-602" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-602"><a href="http://5element-potolki.ru/mnogourovnevy-e-natyazhny-e-potolki/">многоуровневые</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <aside id="text-2" class="widget widget_text">
+              <div class="textwidget">
+                <br><span style="color:#a9aaaa; font-size:15px;">МНОГОКАНАЛЬНЫЙ</span>
+                <br><span style="font-size: 32px; color: #de2c2c;">643-43-33</span> </div>
+            </aside>
+            <aside id="nav_menu-3" class="widget widget_nav_menu">
+              <h3 class="widget-title">Статьи</h3>
+              <div class="menu-menu_stati-container">
+                <ul id="menu-menu_stati-1" class="menu">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132"><a href="http://5element-potolki.ru/preimushhestva/">Преимущества натяжных потолков.</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-122"><a href="http://5element-potolki.ru/kak-vybrat-fakturu/">Как выбрать фактуру натяжного потолка</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-121"><a href="http://5element-potolki.ru/bezopasnost-pri-montazhe/">Безопасность при монтаже натяжных потолков</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-129"><a href="http://5element-potolki.ru/uhod/">Уход за натяжными потолками</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-127"><a href="http://5element-potolki.ru/proizvodstvo/">Производство натяжных потолков</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-123"><a href="http://5element-potolki.ru/montazh/">Монтаж натяжных потолков</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-124"><a href="http://5element-potolki.ru/osveshhenie/">Натяжной потолок и освещение</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-128"><a href="http://5element-potolki.ru/sravnenie-sposobov-otdelki/">Сравнение способов отделки потолка</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-126"><a href="http://5element-potolki.ru/osnovnye-defekty/">Основные дефекты натяжных потолков</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-130"><a href="http://5element-potolki.ru/ceny/">Цены на натяжные потолки</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-131"><a href="http://5element-potolki.ru/iz-chego-sklady-vaetsya-tsena/">Из чего складывается цена на натяжной потолок</a></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </aside>
+      </div>
+      <div style="clear:both; border-top: 1px #71cacf solid;">
+        <div class="sertificate_block" style="margin:10px auto; width:980px; margin-bottom:100px;">
+          <div style="width:650px;float:left">
+            <div class="title">Сертификаты</div>
+            <p>При монтаже натяжных потолков используется безопасное оборудование.</p>
+            <br>
+            <div class="photo">
+              <div class="ngg-galleryoverview" id="ngg-gallery-9-95">
+                <!-- Thumbnails -->
+                <div id="ngg-image-76" class="ngg-gallery-thumbnail-box">
+                  <div class="ngg-gallery-thumbnail">
+                    <a href="http://5element-potolki.ru/content/wp-content/gallery/cert/cert001.jpg" title=" " rel="prettyPhoto[set_9]">
+                      <img title="cert001" alt="cert001" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_cert001.jpg" width="97" height="138">
+                    </a>
+                  </div>
+                </div>
+                <div id="ngg-image-77" class="ngg-gallery-thumbnail-box">
+                  <div class="ngg-gallery-thumbnail">
+                    <a href="http://5element-potolki.ru/content/wp-content/gallery/cert/cert002.jpg" title=" " rel="prettyPhoto[set_9]">
+                      <img title="cert002" alt="cert002" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_cert002.jpg" width="100" height="138">
+                    </a>
+                  </div>
+                </div>
+                <div id="ngg-image-78" class="ngg-gallery-thumbnail-box">
+                  <div class="ngg-gallery-thumbnail">
+                    <a href="http://5element-potolki.ru/content/wp-content/gallery/cert/cert003.jpg" title=" " rel="prettyPhoto[set_9]">
+                      <img title="cert003" alt="cert003" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_cert003.jpg" width="95" height="138">
+                    </a>
+                  </div>
+                </div>
+                <div id="ngg-image-79" class="ngg-gallery-thumbnail-box">
+                  <div class="ngg-gallery-thumbnail">
+                    <a href="http://5element-potolki.ru/content/wp-content/gallery/cert/cert004.jpg" title=" " rel="prettyPhoto[set_9]">
+                      <img title="cert004" alt="cert004" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_cert004.jpg" width="98" height="138">
+                    </a>
+                  </div>
+                </div>
+                <div id="ngg-image-80" class="ngg-gallery-thumbnail-box">
+                  <div class="ngg-gallery-thumbnail">
+                    <a href="http://5element-potolki.ru/content/wp-content/gallery/cert/cert005.jpg" title=" " rel="prettyPhoto[set_9]">
+                      <img title="cert005" alt="cert005" src="<?php echo get_template_directory_uri(); ?>/img/thumbs_cert005.jpg" width="96" height="138">
+                    </a>
+                  </div>
+                </div>
+                <!-- Pagination -->
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2>Покупателю</h2>
+            <div class="menu-menu_bottom-container">
+              <ul id="menu-menu_bottom" class="menu">
+                <li id="menu-item-328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"><a href="http://5element-potolki.ru/calc/">Калькулятор</a></li>
+                <li id="menu-item-1020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1020"><a href="http://5element-potolki.ru/vyzvat-zamershhika/">Вызвать замерщика</a></li>
+              </ul>
+            </div>
+            <br><span style="color:#a9aaaa; font-size:15px;">МНОГОКАНАЛЬНЫЙ</span>
+            <br><span style="font-size: 32px; color: #de2c2c;"> 643-43-33</span></div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main block -->
+    <!-- Footer block -->
+    <footer>
+      <div style="margin: 0 auto; width: 980px;">
+        <div style="float:left; font-size: 12px; padding-top: 85px; width: 300px; "> © 2008 Натяжные потолки в Санкт-Петербурге
+          <br> +7(812)643-43-33
+        </div>
+        <div style="width: 325px; float:right;">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/logo_new.jpg" style="float:left; padding-top:80px;">&nbsp;
+          <p style="font-size: 12px; padding-top: 85px;">Группа компаний "Поставка №1"</p>
+        </div>
+        <div style="clear:both; text-align:center;">
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
