@@ -130,7 +130,7 @@ function wpeFootNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="footernav">%3$s</ul>',
+    'items_wrap'      => '<ul id="menu-menu_bottom" class="menu">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -153,7 +153,30 @@ function wpeSideNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="sidebarnav">%3$s</ul>',
+    'items_wrap'      => '<ul id="menu-menu_main" class="menu">%3$s</ul>',
+    'depth'           => 0,
+    'walker'          => ''
+    )
+  );
+}
+// WPE sidebar navigation
+function wpeSideNavTwo() {
+  wp_nav_menu(
+  array(
+    'theme_location'  => 'sidebar-menu-two',
+    'menu'            => '',
+    'container'       => 'div',
+    'container_class' => 'menu-{menu slug}-container',
+    'container_id'    => '',
+    'menu_class'      => 'menu',
+    'menu_id'         => '',
+    'echo'            => true,
+    'fallback_cb'     => 'wp_page_menu',
+    'before'          => '',
+    'after'           => '',
+    'link_before'     => '',
+    'link_after'      => '',
+    'items_wrap'      => '<ul id="menu-menu_dop" class="menu">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -165,6 +188,7 @@ function register_html5_menu() {
   register_nav_menus(array(
     'header-menu' => __('Меню в шапке', 'wpeasy'),
     'sidebar-menu' => __('Меню в сайдбар', 'wpeasy'),
+    'sidebar-menu-two' => __('Меню в сайдбар 2', 'wpeasy'),
     'footer-menu' => __('Меню в подвал', 'wpeasy')
   ));
 }
@@ -177,8 +201,8 @@ if (function_exists('register_sidebar')) {
     'id' => 'widgetarea1',
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h6>',
-    'after_title' => '</h6>'
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>'
   ));
   //  Define Sidebar Widget Area 2. If your want to display more widget - uncoment this
   /*
@@ -654,10 +678,16 @@ function disable_emojicons_tinymce( $plugins ) {
 }
 
 
-
-
-
-
-
+$defaults = array(
+  'default-color'          => '',
+  'default-image'          => '',
+  'default-repeat'         => '',
+  'default-position-x'     => '',
+  'default-attachment'     => '',
+  'wp-head-callback'       => '_custom_background_cb',
+  'admin-head-callback'    => '',
+  'admin-preview-callback' => ''
+);
+add_theme_support( 'custom-background', $defaults );
 
 ?>

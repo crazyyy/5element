@@ -57,3 +57,21 @@ $trs: all .15s;
 $base-duration: 150ms;
 $base-timing: ease;
 $base-transition: background-color $base-duration * 5 $base-timing, color $base-duration * .7 $base-timing, opacity $base-duration * .3 $base-timing;
+
+.clearfix {
+  *zoom: 1;
+  &:before {
+    display: table;
+
+    content: '';
+  }
+  &:after {
+    display: table;
+    clear: both;
+
+    content: '';
+  }
+}
+.clear {
+  clear: both;
+}

@@ -19,8 +19,6 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
-
   <!-- Main block -->
   <div style="width: 1000px; margin: 0 auto; background-color: #fff;">
     <div class="page">
@@ -36,8 +34,7 @@
             <div class="menu-menu_client-container">
               <ul id="menu-menu_client" class="menu_client">
                 <li><a href="">Заказать звонок</a></li>
-                <li><a href="">Вызвать замерщика</a></li>
-
+                <li><a href="<?php echo home_url(); ?>/kontakty.htm">Написать письмо</a></li>
               </ul>
             </div>
             </span>
@@ -59,25 +56,19 @@
       <div class="main">
         <section class="center_content">
           <div style="margin-top:-10px; margin-left:-10px">
-            <!-- End vSlider options -->
+
             <div id="maincontainer">
               <div class="coin-slider" id="coin-slider-main">
                 <div id="main">
-                  <a href="http://5element-potolki.ru/calc/" style="background:#fff;" target="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb.jpg" style="width: 718px; height: 280px; display: none;" alt="">
-                  </a>
-                  <a href="http://5element-potolki.ru/" style="background:#fff;" target="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb(1).jpg" style="width: 718px; height: 280px; display: none;" alt="">
-                  </a>
-                  <a href="http://5element-potolki.ru/" style="background:#fff;" target="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb(2).jpg" style="width: 718px; height: 280px; display: none;" alt="">
-                  </a>
-                  <a href="http://5element-potolki.ru/" style="background:#fff;" target="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb(3).jpg" style="width: 718px; height: 280px; display: none;" alt="">
-                  </a>
-                  <a href="http://5element-potolki.ru/" style="background:#fff;" target="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/timthumb(4).jpg" style="width: 718px; height: 280px; display: none;" alt="">
-                  </a>
+
+                  <?php if( have_rows('slider', 30) ): while ( have_rows('slider', 30) ) : the_row(); ?>
+                    <?php $image = get_sub_field('image'); if( !empty($image) ): ?>
+                      <a href="<?php the_sub_field('url'); ?>" style="background:#fff;">
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                      </a>
+                    <?php endif; ?>
+                  <?php endwhile; endif; ?>
+
                 </div>
               </div>
             </div>

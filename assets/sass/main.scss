@@ -26,8 +26,7 @@ body {
 
 
 .page {
-  overflow: hidden;
-
+  /* overflow: hidden; */
   width: 100%;
   height: 100%;
   height: auto !important;
@@ -174,92 +173,108 @@ acronym {
 @import 'prettyPhoto';
 @import 'nggallery';
 @import 'style';
-.country-list.hide, #rc-connect, .rc-button {
+.country-list.hide,
+#rc-connect,
+.rc-button {
   display: none;
 }
 
 #maincontainer {
   float: none;
+
   margin: 10px 10px 10px 10px;
 }
 
 #main {
   position: relative;
+
   overflow: hidden;
+
   width: 718px;
   height: 280px;
-
   a {
     text-decoration: none !important;
+
     border: none !important;
     outline: none !important;
-
     img {
       text-decoration: none !important;
+
       border: none !important;
       outline: none !important;
     }
   }
-
   h4 {
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 16px !important;
+
     margin: 0 !important;
     padding: 0 !important;
+
     color: #fff !important;
   }
-
   .cs-title {
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 12px !important;
     line-height: normal !important;
-    letter-spacing: normal !important;
-    color: #fff !important;
-    background: #222;
+
     position: absolute;
+
     width: 708px;
     padding: 10px;
+
+    letter-spacing: normal !important;
+
+    color: #fff !important;
+    background: #222;
   }
 }
 
 #maincontainer .cs-buttons {
   font-size: 0;
+
   float: left;
   clear: both;
+
   margin: 10px 0 10px 300px;
 }
 
 #cs-button-main {
   z-index: 999;
+
   outline: none;
 }
 
 #maincontainer {
   .cs-buttons {
     font-size: 0;
-    float: left;
-    padding: 10px;
-    outline: none !important;
 
+    float: left;
+
+    padding: 10px;
+
+    outline: none !important;
     a {
       float: left;
+
       width: 15px;
       height: 15px;
       margin-left: 5px;
+
       text-indent: -1000px;
+
       outline: none !important;
       background: url('../img/default_style.png') no-repeat;
       background-position: top;
-
       &:hover {
         top: 15px;
+
         outline: none !important;
         background: url('../img/default_style.png') no-repeat;
         background-position: bottom;
       }
     }
   }
-
   a.cs-active {
     outline: none !important;
     background: url('../img/default_style.png') no-repeat;
@@ -268,23 +283,24 @@ acronym {
 }
 
 #main {
-  .cs-prev, .cs-next {
+  border: 0 solid #fff;
+  border-radius: 0;
+  .cs-prev,
+  .cs-next {
     outline: none;
   }
-
-  .cs-prev, .cs-next {
+  .cs-prev,
+  .cs-next {
     font-family: 'Courier New', Courier, monospace;
     font-size: 28px !important;
     font-weight: bold;
+
     padding: 0 10px !important;
+
     color: #fff !important;
     border-radius: 5px;
     background: #222 !important;
   }
-
-  border: 0 solid #fff;
-  border-radius: 0;
-
   img {
     border: 0 solid #fff;
     border-radius: 0;
@@ -293,6 +309,46 @@ acronym {
 
 #rc-phone-button.rc-pressed:hover {
   background-color: rgb(19, 133, 33) !important;
+}
+.products_block3 {
+  @extend .clearfix;
+  li {
+    padding: 15px;
+    width: 725px;
+    @extend .clearfix;
+    &:nth-child(even) {
+      background-color: #fdf9de;
+    }
+  }
+}
+.feature-img {
+  width: 170px;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin: 0 15px 15px 0;
+  img {
+    max-width: 100%;
+  }
+}
+.pagination {
+  text-align: center;
+  padding: 15px 0;
+  span, a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+}
+.potolki-svoimi-rukami {
+  margin-top: 60px;
 }
 
 @import 'base64';

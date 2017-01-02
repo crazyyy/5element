@@ -9,11 +9,9 @@
     </div>
 
   <?php endwhile; else: // If 404 page error ?>
-
     <div class="cont">
       <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
     </div>
-
   <?php endif; ?>
 
 </section>
